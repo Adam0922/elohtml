@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kamarás Ádám" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+    </script>
+    <script>
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+    <title>Webform</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo" title="Logo"></div>
+      <div id="banner-content">
+        <a href="index.html">
+          <h1 title="Header">HTML5 - CSS3 - PROJECT<br />&#171;header&#187;</h1>
+        </a>
+      </div>
+    </header>
+
+    <div id="container">
+      <nav>
+        <h2 title="Nav">&#171;nav&#187;</h2>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#nogo">Több oldal</a>
+              <ul>
+                <li>
+                  <a href="beatingsziv.html">Animált szív</a>
+                </li>
+                <li>
+                  <a href="webform.html">Űrlap</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#nogo" class="media-button">Media</a>
+              <ul>
+                <li>
+                  <a href="galeria.html">Galéria</a>
+                </li>
+                <li>
+                  <a href="audio&video.html">Video, audio</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section>
+        <h2 title="Section">&#171;Section&#187;</h2>
+        <article>
+          <h2 title="Pizza rendelő űrlap">Pizzzzzzza rendelés</h2>
+          <form name="Rendeles">
+            <fieldset>
+              <legend>Megrendelő adatai</legend>
+
+              <p>
+                <label
+                  >Név:
+                  <input type="text" name="nev" />
+                  <small> Vezeténév; Keresztnév</small>
+                </label>
+              </p>
+
+              <p>
+                <label
+                  >Telefonszám:
+                  <input type="tel" name="telefon" size="12" />
+                </label>
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Pizza alapja</legend>
+
+              <p>
+                <label>
+                  <input type="radio" name="alap" value="tej" />Tejfölös
+                </label>
+                <br />
+                <label>
+                  <input type="radio" name="alap" value="pari" />Paradicsomos
+                </label>
+                <br />
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Pizza mérete</legend>
+
+              <p>
+                <label>
+                  <input type="radio" name="meret" value="kicsi" />Kicsi
+                </label>
+                <br />
+                <label>
+                  <input type="radio" name="meret" value="nagy" />Nagy
+                </label>
+                <br />
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Pizza feltétek</legend>
+
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="feltet1"
+                    value="sonka"
+                    checked
+                  />Sonka
+                </label>
+                <br />
+                <label>
+                  <input type="checkbox" name="feltet2" value="sajt" />Sajt
+                </label>
+                <br />
+                <label>
+                  <input
+                    type="checkbox"
+                    name="feltet3"
+                    value="kukorica"
+                  />Kukorica
+                </label>
+                <br />
+              </p>
+            </fieldset>
+
+            <p>
+              <label>Mennyiség: <input type="number" name="mennyiseg" /></label>
+            </p>
+            <p>
+              <label
+                >Szállítási idő: <input type="date" name="kiszallitas"
+              /></label>
+            </p>
+            <p>
+              <label
+                >Egyéb kivánságok: <textarea name="egyeb"></textarea>
+              </label>
+            </p>
+
+            <input type="reset" name="visszallitas" />
+            <input type="submit" name="kudles" />
+          </form>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <h2 title="footer">&#171;Footer&#187;</h2>
+    </footer>
+
+    <button class="open-button" onclick="openForm()">Open form</button>
+
+    <div class="form-container" id="myForm">
+      <form>
+        <h1>Login</h1>
+        <label><b>Email: </b></label>
+        <br />
+        <input type="text" name="email" placeholder="Enter email" />
+
+        <label><b>Password: </b></label>
+        <br />
+        <input type="password" name="psw" placeholder="Enter password" />
+
+        <button type="submit" class="btn">Login</button>
+
+        <button type="button" class="btn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </body>
+</html>

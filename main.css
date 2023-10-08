@@ -1,0 +1,161 @@
+body {
+  background-image: url(images/bg-cool.png);
+}
+
+#logo {
+  float: left;
+  width: 300px;
+  height: 170px;
+  background-image: url(images/premo.png);
+  background-repeat: no-repeat;
+  margin: 5px 0 5px 10px;
+}
+
+header,
+nav,
+article,
+section,
+footer {
+  border: 1px dashed red;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-right: 18%;
+}
+
+h2 {
+  text-align: center;
+}
+
+#banner-content {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#banner-content a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+#banner-content a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: rgb(221, 221, 221);
+  float: left;
+  width: 10%;
+  min-width: 200px;
+  height: 1100px;
+  margin: 0 30px 0 30px;
+}
+
+#menu ul li {
+  list-style-type: none;
+}
+
+#menu ul li a :hover {
+  background-color: #ccc;
+}
+
+#menu ul li:hover > ul a {
+  display: block;
+  text-align: center;
+  float: left;
+  position: relative;
+  min-width: 90%;
+  
+}
+
+.media-button {
+  position: absolute;
+  width: 152px;
+}
+
+.media-button:hover {
+    display: block;
+    text-align: center;
+    position: relative;
+    min-width: 90%;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  background-color: #eff0f1;
+}
+
+#menu ul ul a :hover {
+  background-color: #ccc;
+}
+
+#menu ul ul a {
+  display: none;
+  position: relative;
+  bottom: 26px;
+  left: 100%;
+}
+
+nav {
+  opacity: 0.8;
+  float: left;
+  width: 10%;
+  min-width: 200px;
+  height: 1100px;
+  margin: 0 30px 0 30px;
+}
+
+section {
+  background-color: #f6f6f6;
+  float: left;
+  width: 89%;
+  max-width: 800px;
+  height: 1100px;
+}
+
+article {
+  width: 96%;
+  height: 950px;
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 20px;
+  overflow: auto;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0 20px 0;
+  float: left;
+  background-color: slategray;
+  color: white;
+  line-height: 60px;
+  opacity: 0.8;
+}
+
+#container {
+  width: 1180px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article img {
+  float: left;
+  margin-right: 30px;
+}
