@@ -1,0 +1,22 @@
+.kontener{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.kepek{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    border: 10%;
+    border-color: black;
+}
+.kepek img{
+    width: 100%;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: rgba(255, 0, 0, 0.336);
+    
+}

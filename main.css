@@ -55,20 +55,6 @@ nav {
   height: 1100px; */
 }
 
-#menu ul li {
-  list-style-type:none;
-}
-
-#menu ul li:hover > ul a {
-  display: block;
-  text-align: center;
-  float:initial;
-  position: relative;
-  min-width: 90%;
-  
-}
-
-
 /* #menu ul li a a:hover {
   background-color: #ccc;
   display: block;
@@ -116,22 +102,36 @@ nav {
   
 } */
 
-#menu ul li a {
+
+.menu ul li {
+  list-style-type:none;
+}
+
+.menu ul li:hover > ul a {
+  display: block;
+  text-align: center;
+  float:none;
+  position:relative;
+  min-width: 90%;
+  
+}
+
+.menu ul li a {
   text-decoration:none;
   color: #000;
   display: block;
+  /* position: relative; */
   border: 1px solid black;
   padding: 4px;
   text-align: center;
   background-color: #eff0f1;
 }
 
-#menu ul ul a {
+.menu ul ul a {
   display: none;
-  position: absolute;
+  position: fixed;
   bottom: 26px;
   left: 100%;
-
 }
 
 nav {

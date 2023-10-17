@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kamarás Ádám" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="galeria.css" />
+    <link rel="stylesheet" href="lightbox.css" />
     <title>Galéria</title>
   </head>
   <body>
@@ -20,30 +22,34 @@
     <div id="container">
       <nav>
         <h2 title="Nav">&#171;nav&#187;</h2>
-        <div id="menu">
+        <div class="menu">
           <ul>
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#nogo">Több oldal</a>
+              <a href="#nogo" class="menu-button">Több oldal</a>
               <ul>
                 <li>
-                  <a href="beatingsziv.html">Animált szív</a>
+                  <a class="submenu.btn" href="beatingsziv.html"
+                    >Animált szív</a
+                  >
                 </li>
                 <li>
-                  <a href="webform.html">Űrlap</a>
+                  <a class="submenu.btn" href="webform.html">Űrlap</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#nogo" class="media-button">Media</a>
+              <a href="#nogo" class="menu-button">Media</a>
               <ul>
                 <li>
-                  <a href="galeria.html">Galéria</a>
+                  <a class="submenu.btn" href="galeria.html">Galéria</a>
                 </li>
                 <li>
-                  <a href="audio&video.html">Video, audio</a>
+                  <a class="submenu.btn" href="audio&video.html"
+                    >Video, audio</a
+                  >
                 </li>
               </ul>
             </li>
@@ -54,11 +60,75 @@
       <section>
         <h2 title="Section">&#171;Section&#187;</h2>
         <article>
-          <h2 title="Article">&#171;Article&#187;</h2>
-          <div class="center">
-            <div class="heart"></div>
-            <div class="kuk"></div>
+          <h2 title="Galeria">&#171;Galéria&#187;</h2>
+          <div id="kontener">
+            <div class="kepek">
+              <a
+                href="images/kep1.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep1.png" />
+              </a>
+              <a
+                href="images/kep2.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep2.png" />
+              </a>
+              <a
+                href="images/kep3.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep3.png" />
+              </a>
+              <a
+                href="images/kep4.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep4.png" />
+              </a>
+              <a
+                href="images/kep5.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep5.png" />
+              </a>
+              <a
+                href="images/kep6.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep6.png" />
+              </a>
+              <a
+                href="images/kep7.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep7.png" />
+              </a>
+              <a
+                href="images/kep8.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep8.png" />
+              </a>
+              <a
+                href="images/kep9.png"
+                data-lightbox="models"
+                data-title="Caption"
+              >
+                <img src="images/kep9.png" />
+              </a>
+            </div>
           </div>
+          <script src="lightbox-plus-jquery.js"></script>
         </article>
       </section>
     </div>
