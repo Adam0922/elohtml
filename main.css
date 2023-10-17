@@ -25,12 +25,7 @@ header {
   margin-bottom: 10px;
 }
 
-h1 {
-  text-align: center;
-  margin-right: 18%;
-}
-
-h2 {
+h1, h2 {
   text-align: center;
 }
 
@@ -49,10 +44,14 @@ h2 {
 }
 
 nav {
-  background-color: rgb(221, 221, 221);
-  /* width: 10%;
-  min-width: 220px;
-  height: 1100px; */
+  float: left;
+  width: 10%;
+  min-width: 200px;
+  height: 1100px;
+  margin: 0px 30px 0px 30px;
+  background-color: silver;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
 /* #menu ul li a a:hover {
@@ -102,45 +101,70 @@ nav {
   
 } */
 
-
-.menu ul li {
-  list-style-type:none;
+#menu ul li:hover > ul a{
+    display: block;
+    float: left;
+    text-align: left;
+    position:relative;
+    min-width: 90%;
 }
 
-.menu ul li:hover > ul a {
-  display: block;
-  text-align: center;
-  float:none;
-  position:relative;
-  min-width: 90%;
+.inside_media_button{
+    position: relative;
+    top: -7px;
+}
+
+.inside_more_button{
+  position: relative;
+  top: -7px;
+}
+.more_button:hover > ul a{
+    width: 152px;
+    text-align: left;
+    position: relative;
+    min-width: 90%;
+}
+
+.media_button{
+    position:relative;
+    width: 152px;
+    
+    
+}
+
+.media_button:hover > ul a{
+    width: 152px;
+    text-align: left;
+    position: relative;
+    min-width: 90%;
+}
+
+#menu{
+  position: relative;
   
 }
 
-.menu ul li a {
+#menu ul li {
+  list-style-type:none;
+}
+
+#menu ul li a {
   text-decoration:none;
   color: #000;
   display: block;
   /* position: relative; */
   border: 1px solid black;
-  padding: 4px;
+  padding: 3px;
   text-align: center;
   background-color: #eff0f1;
+  max-height: 18px;
 }
 
-.menu ul ul a {
+#menu ul ul a {
   display: none;
-  position: fixed;
-  bottom: 26px;
+  position: relative;
+  bottom: 20px;
   left: 100%;
-}
-
-nav {
-  opacity: 0.8;
-  float: left;
-  width: 10%;
-  min-width: 200px;
-  height: 1100px;
-  margin: 0 30px 0 30px;
 }
 
 section {

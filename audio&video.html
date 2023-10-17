@@ -21,34 +21,30 @@
     <div id="container">
       <nav>
         <h2 title="Nav">&#171;nav&#187;</h2>
-        <div class="menu">
+        <div id="menu">
           <ul>
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#nogo" class="menu-button">Több oldal</a>
-              <ul>
+              <a href="#nogo" class="more-button">Több oldal</a>
+              <ul class="inside_more_button">
                 <li>
-                  <a class="submenu.btn" href="beatingsziv.html"
-                    >Animált szív</a
-                  >
+                  <a href="beatingsziv.html">Animált szív</a>
                 </li>
                 <li>
-                  <a class="submenu.btn" href="webform.html">Űrlap</a>
+                  <a href="webform.html">Űrlap</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#nogo" class="menu-button">Media</a>
-              <ul>
+              <a href="#nogo" class="media-button">Media</a>
+              <ul class="inside_media_button">
                 <li>
-                  <a class="submenu.btn" href="galeria.html">Galéria</a>
+                  <a href="galeria.html">Galéria</a>
                 </li>
                 <li>
-                  <a class="submenu.btn" href="audio&video.html"
-                    >Video, audio</a
-                  >
+                  <a href="audio&video.html">Video, audio</a>
                 </li>
               </ul>
             </li>
@@ -60,7 +56,17 @@
         <h2 title="Section">&#171;Section&#187;</h2>
         <article>
           <h2 title="Video">&#171;Video&#187;</h2>
-          <div class="center"></div>
+          <div class="center">
+            <video
+              id="player"
+              playsinline
+              controls
+              data-poster="/path/to/poster.jpg"
+            >
+              <source src="video.mp4" type="video/mp4" />
+            </video>
+            <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+          </div>
         </article>
       </section>
     </div>
